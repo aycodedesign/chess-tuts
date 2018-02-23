@@ -1,0 +1,217 @@
+body {
+    background-color: #333;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #eee;
+    padding: 20px;
+    width: 800px;
+    margin: auto;
+}
+
+header,
+footer {
+    background-color: #ccc;
+    line-height: 200px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 50px;
+    height: 700px;
+    width: 700px;
+    padding: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+/* SECTION 1 */
+
+.board {
+    position: relative;
+    left: -50px;
+    top: 200px;
+    opacity: 1;
+    z-index: 0;
+    transition: all 1s;
+    /*this is the animation step*/
+}
+
+.board.offstage {
+    left: -50px;
+    top: 700px;
+    opacity: 0.5;
+}
+
+.rook1 {
+    position: relative;
+    left: -120px;
+    top: -240px;
+    opacity: 1;
+    transition: all 1s;
+    z-index: 2;
+    /*this is the animation step*/
+}
+
+.rook1.offstage {
+    left: -120px;
+    top: -600px;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.rook2.offstage {
+    left: -50px;
+    top: 700px;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.rook2 {
+    position: relative;
+    left: -50px;
+    top: 200px;
+    opacity: 1;
+    transition: all 1s;
+    z-index: 2;
+    /*this is the animation step*/
+}
+/* SECTION 2 */
+
+.board {
+    position: relative;
+    left: -50px;
+    top: 200px;
+    opacity: 1;
+    z-index: 0;
+    transition: all 1s;
+    /*this is the animation step*/
+}
+
+.board.offstage {
+    left: -50px;
+    top: 700px;
+    opacity: 0.5;
+}
+/* SECTION 3 */
+
+.board {
+    position: relative;
+    left: -50px;
+    top: 200px;
+}
+
+
+            /* FIFTIES
+            /*SECTION 1*/
+            /*SECTION 2*/
+
+            .fifties-1955 {
+                position: relative;
+                left: 0;
+                top: 0;
+                opacity: 1;
+                transition: all 1s;
+                /*this is the animation step*/
+            }
+
+            .fifties-1955.offstage {
+                left: -800px;
+                opacity: 0.5;
+            }
+
+            .fifties-car {
+                position: relative;
+                left: 0;
+                top: 0;
+                opacity: 1;
+                transition: all 1s;
+                /*this is the animation step*/
+            }
+
+            .fifties-car.offstage {
+                left: 1200px;
+                opacity: 0.5;
+            }
+            /*SIXTIES*/
+            /*SECTION 3*/
+
+            .sixties-1962 {
+                position: relative;
+                left: 0;
+                top: 0;
+                opacity: 1;
+                transition: all 1s;
+                /*this is the animation step*/
+            }
+
+            .sixties-1962.offstage {
+                left: -800px;
+                opacity: 0.5;
+            }
+
+            .sixties-car {
+                position: relative;
+                left: 0;
+                top: 0;
+                opacity: 1;
+                transition: all 3s;
+                /*this is the animation step*/
+            }
+
+            .sixties-car.offstage {
+                left: 600px;
+                opacity: 0.5;
+                opacity: 1;
+                z-index: 0;
+                transition: all 1s;
+                /*this is the animation step*/
+            }
+
+            .board.offstage {
+                left: -50px;
+                top: 700px;
+                opacity: 0.5;
+            }
+            /* SECTION 4 */
+
+            .board {
+                position: relative;
+                left: -50px;
+                top: 200px;
+                opacity: 1;
+                z-index: 0;
+                transition: all 1s;
+                /*this is the animation step*/
+            }
+
+            .board.offstage {
+                left: -50px;
+                top: 700px;
+                opacity: 0.5;
+            }
+        }
+        /*SECTION 4*/
+        .sixties-1969 {
+            position: relative;
+            left: 0;
+            top: 0;
+            opacity: 1;
+            transition: all 1s;
+            /*this is the animation step*/
+        }
+        .sixties-1969.offstage {
+            top: -500px;
+            opacity: 0;
+        }
+        .exige {
+            position: relative;
+            left: 0;
+            top: 0;
+        } */
