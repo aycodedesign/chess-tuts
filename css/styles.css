@@ -12,9 +12,10 @@ body {
 
 header,
 footer {
-    background-color: #ccc;
-    line-height: 200px;
+    background-color: #000000;
+    line-height: 100px;
     text-align: center;
+    color: greenyellow;
 }
 
 h1 {
@@ -31,187 +32,215 @@ section {
     font-size: 40px;
     text-align: center;
 }
+
+
 /* SECTION 1 */
 
-.board {
+.board1 {
     position: relative;
     left: -50px;
     top: 200px;
     opacity: 1;
     z-index: 0;
-    transition: all 1s;
+    transition: all 4s;
     /*this is the animation step*/
 }
 
-.board.offstage {
-    left: -50px;
-    top: 700px;
-    opacity: 0.5;
-}
-
-.rook1 {
-    position: relative;
-    left: -120px;
-    top: -240px;
-    opacity: 1;
-    transition: all 1s;
-    z-index: 2;
-    /*this is the animation step*/
-}
-
-.rook1.offstage {
-    left: -120px;
-    top: -600px;
-    opacity: 0.5;
-    z-index: 2;
-}
-
-.rook2.offstage {
-    left: -50px;
-    top: 700px;
-    opacity: 0.5;
-    z-index: 2;
-}
-
-.rook2 {
-    position: relative;
+.board1.offstage {
     left: -50px;
     top: 200px;
+    opacity: 0;
+}
+
+.b-group {
+    position: relative;
+    left: -225px;
+    top: -250px;
     opacity: 1;
-    transition: all 1s;
+    transition: all 1.5s;
     z-index: 2;
     /*this is the animation step*/
 }
+
+.b-group.offstage {
+    left: -225px;
+    top: -600px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.w-group {
+    position: relative;
+    left: -50px;
+    top: -705px;
+    opacity: 1;
+    transition: all 1.5s;
+    z-index: 2;
+    /*this is the animation step*/
+}
+
+.w-group.offstage {
+    left: -50px;
+    top: -1270px;
+    opacity: 0;
+    z-index: 2;
+}
+
+
 /* SECTION 2 */
 
-.board {
+.board2 {
+    position: relative;
+    left: -50px;
+    top: 60px;
+    opacity: 1;
+    z-index: 0;
+    transition: all 4s;
+    /*this is the animation step*/
+}
+
+.board2.offstage {
+    left: -50px;
+    top: 60px;
+    opacity: 0;
+}
+
+.w-pawn {
+    position: relative;
+    left: 70px;
+    top: -210px;
+    opacity: 1;
+    transition: all 1.5s;
+    z-index: 2;
+    /*this is the animation step*/
+}
+
+.w-pawn.offstage {
+    left: 485px;
+    top: -150px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.w-king {
+    position: relative;
+    left: -72px;
+    top: -175px;
+    opacity: 1;
+    transition: all 1.5s;
+    z-index: 2;
+    /*this is the animation step*/
+}
+
+.w-king.offstage {
+    left: -500px;
+    top: -150px;
+    opacity: 0;
+    z-index: 2;
+}
+
+
+/* SECTION 3 */
+
+.board3 {
     position: relative;
     left: -50px;
     top: 200px;
     opacity: 1;
     z-index: 0;
-    transition: all 1s;
+    transition: all 4s;
     /*this is the animation step*/
 }
 
-.board.offstage {
+.board3.offstage {
     left: -50px;
-    top: 700px;
-    opacity: 0.5;
+    top: 200px;
+    opacity: 0;
 }
-/* SECTION 3 */
 
-.board {
+.w-rook {
+    position: relative;
+    left: 255px;
+    top: -35px;
+    opacity: 1;
+    transition: all 1.5s;
+    z-index: 2;
+    /*this is the animation step*/
+}
+
+.w-rook.offstage {
+    left: -500px;
+    top: -300px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.w-bishop {
+    position: relative;
+    left: -90px;
+    top: -35px;
+    opacity: 1;
+    transition: all 1.5s;
+    z-index: 2;
+    /*this is the animation step*/
+}
+
+.w-bishop.offstage {
+    left: 500px;
+    top: -300px;
+    opacity: 0;
+    z-index: 2;
+}
+
+
+/* SECTION 4 */
+
+.board4 {
     position: relative;
     left: -50px;
     top: 200px;
+    opacity: 1;
+    z-index: 0;
+    transition: all 4s;
+    /*this is the animation step*/
 }
 
+.board4.offstage {
+    left: -50px;
+    top: 200px;
+    opacity: 0;
+}
 
-            /* FIFTIES
-            /*SECTION 1*/
-            /*SECTION 2*/
+.w-knight {
+    position: relative;
+    left: 160px;
+    top: -50px;
+    opacity: 1;
+    transition: all 1.5s;
+    z-index: 2;
+    /*this is the animation step*/
+}
 
-            .fifties-1955 {
-                position: relative;
-                left: 0;
-                top: 0;
-                opacity: 1;
-                transition: all 1s;
-                /*this is the animation step*/
-            }
+.w-knight.offstage {
+    left: 250px;
+    top: -680px;
+    opacity: 0;
+    z-index: 2;
+}
 
-            .fifties-1955.offstage {
-                left: -800px;
-                opacity: 0.5;
-            }
+.w-queen {
+    position: relative;
+    left: 5px;
+    top: -48px;
+    opacity: 1;
+    transition: all 1.5s;
+    z-index: 2;
+    /*this is the animation step*/
+}
 
-            .fifties-car {
-                position: relative;
-                left: 0;
-                top: 0;
-                opacity: 1;
-                transition: all 1s;
-                /*this is the animation step*/
-            }
-
-            .fifties-car.offstage {
-                left: 1200px;
-                opacity: 0.5;
-            }
-            /*SIXTIES*/
-            /*SECTION 3*/
-
-            .sixties-1962 {
-                position: relative;
-                left: 0;
-                top: 0;
-                opacity: 1;
-                transition: all 1s;
-                /*this is the animation step*/
-            }
-
-            .sixties-1962.offstage {
-                left: -800px;
-                opacity: 0.5;
-            }
-
-            .sixties-car {
-                position: relative;
-                left: 0;
-                top: 0;
-                opacity: 1;
-                transition: all 3s;
-                /*this is the animation step*/
-            }
-
-            .sixties-car.offstage {
-                left: 600px;
-                opacity: 0.5;
-                opacity: 1;
-                z-index: 0;
-                transition: all 1s;
-                /*this is the animation step*/
-            }
-
-            .board.offstage {
-                left: -50px;
-                top: 700px;
-                opacity: 0.5;
-            }
-            /* SECTION 4 */
-
-            .board {
-                position: relative;
-                left: -50px;
-                top: 200px;
-                opacity: 1;
-                z-index: 0;
-                transition: all 1s;
-                /*this is the animation step*/
-            }
-
-            .board.offstage {
-                left: -50px;
-                top: 700px;
-                opacity: 0.5;
-            }
-        }
-        /*SECTION 4*/
-        .sixties-1969 {
-            position: relative;
-            left: 0;
-            top: 0;
-            opacity: 1;
-            transition: all 1s;
-            /*this is the animation step*/
-        }
-        .sixties-1969.offstage {
-            top: -500px;
-            opacity: 0;
-        }
-        .exige {
-            position: relative;
-            left: 0;
-            top: 0;
-        } */
+.w-queen.offstage {
+    left: -30px;
+    top: -680px;
+    opacity: 0;
+    z-index: 2;
+}
