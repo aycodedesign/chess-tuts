@@ -1,3 +1,6 @@
+console.log('BANGBANG');
+
+
 // TRIGGERING THE ANIMATIONS
 
 	// SECTION 1 ONLY
@@ -72,15 +75,6 @@ function sect4_onStage() {
 	}
 }
 
-function sect5_onStage() {
-	if ($('#sect5 .inview-block').is(':in-viewport')) {
-		$('#sect5 img.exige').removeClass('offstage');
-	}
-	else {
-		$('#sect5 img.exige').addClass('offstage');
-	}
-}
-
 $(window).scroll(sect1_onStage);
 
 $(window).scroll(sect2_onStage);
@@ -89,4 +83,26 @@ $(window).scroll(sect3_onStage);
 
 $(window).scroll(sect4_onStage);
 
-$(window).scroll(sect5_onStage);
+
+// PARALLAX
+
+function parallax_move(theSection, posLeft, scrollSpeed) {
+
+	var sectHowFar = theSection.offset().top;
+	// shows how far user has scrolled, per scroll
+	var scrollFromTop = $(window).scrollTop() + 100;
+
+	var posTop = (scrollFromTop - sectHowFar) * scrollSpeed;
+	
+	// theSection.css('background-position', '-100px 600px, center center')
+	theSection.css('background-position', posLeft + ' ' + posTop + 'px, center center')
+	// console.log(theSection);
+}
+
+
+$(window).scroll(function () {
+	parallax_move($('#sect1'), '750px', 0.3);
+	parallax_move($('#sect2'), '-50px', 0.4);
+	parallax_move($('#sect3'), '750px', 0.4);
+	parallax_move($('#sect4'), '-50px', 0.4);
+});
