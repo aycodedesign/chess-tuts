@@ -48,7 +48,7 @@ section {
     background-repeat: no-repeat;
 }
 
-.board1 {
+#sect1 .board {
     position: relative;
     left: -250px;
     top: 200px;
@@ -58,7 +58,7 @@ section {
     /*this is the animation step*/
 }
 
-.board1.offstage {
+#sect1 .board.offstage {
     left: -250px;
     top: 200px;
     opacity: 0;
@@ -110,7 +110,7 @@ section {
     background-repeat: no-repeat;
 }
 
-.board2 {
+#sect2 .board {
     position: relative;
     left: 310px;
     top: 60px;
@@ -120,7 +120,7 @@ section {
     /*this is the animation step*/
 }
 
-.board2.offstage {
+#sect2 .board.offstage {
     left: 310px;
     top: 60px;
     opacity: 0;
@@ -172,7 +172,7 @@ section {
     background-repeat: no-repeat;
 }
 
-.board3 {
+#sect3 .board {
     position: relative;
     left: -180px;
     top: 200px;
@@ -182,7 +182,7 @@ section {
     /*this is the animation step*/
 }
 
-.board3.offstage {
+#sect3 .board.offstage {
     left: -180px;
     top: 200px;
     opacity: 0;
@@ -234,7 +234,7 @@ section {
     background-repeat: no-repeat;
 }
 
-.board4 {
+#sect4 .board {
     position: relative;
     left: 310px;
     top: 200px;
@@ -244,7 +244,7 @@ section {
     /*this is the animation step*/
 }
 
-.board4.offstage {
+#sect4 .board.offstage {
     left: 310px;
     top: 200px;
     opacity: 0;
