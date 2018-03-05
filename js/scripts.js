@@ -22,6 +22,15 @@ console.log('BANGBANG');
 
 // GET THE 'IN VIEWPORT' GOING
 
+function box_onStage() {
+	if ($('.intro .inview-block').is(':in-viewport')) {
+		$('.intro .box').removeClass('offstage');
+	}
+	else {
+		$('.intro .box').removeClass('offstage');
+	}
+}
+
 function sect1_onStage() {
 	if ($('#sect1 .inview-block').is(':in-viewport')) {
 		$('#sect1 img.board').removeClass('offstage');
