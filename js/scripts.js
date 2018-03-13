@@ -15,32 +15,23 @@ console.log('BANGBANG');
 // 	// ALL IMAGES
 
 // function all_image_click() {
-// 	$(this).removeClass('offstage');	
+// 	$(this).removeClass('offstage');
 // }
 // $('.inview-block img').click(all_image_click);
 
 
 // GET THE 'IN VIEWPORT' GOING
 
-function box_onStage() {
-	if ($('.intro .inview-block').is(':in-viewport')) {
-		$('.intro .box').removeClass('offstage');
-	}
-	else {
-		$('.intro .box').removeClass('offstage');
-	}
-}
-
 function sect1_onStage() {
 	if ($('#sect1 .inview-block').is(':in-viewport')) {
 		$('#sect1 img.board').removeClass('offstage');
-		$('#sect1 img.b-group').removeClass('offstage');
-		$('#sect1 img.w-group').removeClass('offstage');
+		$('#sect1 img.b-all').removeClass('offstage');
+		$('#sect1 img.w-all').removeClass('offstage');
 	}
 	else {
 		$('#sect1 img.board').addClass('offstage');
-		$('#sect1 img.b-group').addClass('offstage');
-		$('#sect1 img.w-group').addClass('offstage');
+		$('#sect1 img.b-all').addClass('offstage');
+		$('#sect1 img.w-all').addClass('offstage');
 	}
 }
 
@@ -95,23 +86,22 @@ $(window).scroll(sect4_onStage);
 
 // PARALLAX
 
-function parallax_move(theSection, posLeft, scrollSpeed) {
+function parallax_move(theMessage, posLeft, scrollSpeed) {
 
-	var sectHowFar = theSection.offset().top;
+	var sectHowFar = theMessage.offset().top;
 	// shows how far user has scrolled, per scroll
-	var scrollFromTop = $(window).scrollTop() + 100;
+	var scrollFromTop = $(window).scrollTop() + 200;
 
 	var posTop = (scrollFromTop - sectHowFar) * scrollSpeed;
-	
-	// theSection.css('background-position', '-100px 600px, center center')
-	theSection.css('background-position', posLeft + ' ' + posTop + 'px, center center')
-	// console.log(theSection);
+
+	// theMessage.css('background-position', '-100px 600px, center center')
+	theMessage.css('background-position', posLeft + ' ' + posTop + 'px, center center');
+	console.log(theMessage);
 }
 
-
 $(window).scroll(function () {
-	parallax_move($('#sect1'), '750px', 0.3);
-	parallax_move($('#sect2'), '-50px', 0.4);
-	parallax_move($('#sect3'), '750px', 0.4);
-	parallax_move($('#sect4'), '-50px', 0.4);
+	parallax_move($('#message1'), '0', 0.4);
+	parallax_move($('#message2'), '0', 0.2);
+	parallax_move($('#message3'), '0', 0.7);
+	parallax_move($('#message4'), '0', 0.2);
 });

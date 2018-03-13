@@ -1,302 +1,519 @@
-body {
-    margin: 0 auto;
-    background-image: url('../img/background/blur.jpg');
-    background-size: cover;
-}
+/* COLORS */
+
+/*
+parallax: #243e73
+message: #d5e3ff
+titles: #243E73 Cinzel Black
+staging: #F2F2F2
+backdrop: white
+body: #A8ADC1
+rail: gradient 45 degrees black white
+
+*/
 
 .container {
-    background-color: rgba(255, 255, 255, 0.63);
-    padding: 20px;
-    width: 1300px;
-    margin: auto;
-    box-shadow: 0px -10px 20px rgb(255, 255, 255);
+  width: 1000px;
+  height: 5000px;
+  margin: 0 auto;
 }
 
-#emphasis {
-    font-size: 20pt;
-    text-align: center !important;
+body {
+  background-color: #A8ADC1;
+  margin: 0 auto;
+  font-size: 1rem;
 }
 
-header {
-    background-image: url('../img/background/title.jpg');
-    background-size: 800px;
-    background-position: center center;
-    width: 1300px;
-    height: 400px;
-    text-align: center;
+aside#message1 {
+  top: 750px;
+  left: 300px;
+  width: 400px;
+  height: 700px;
+  z-index: 5;
+  position: absolute;
+  background-image: url('../img/message/message1.png');
+  background-size: 400px auto;
+  background-position: 1000px 1000px;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+aside#message2 {
+  top: 1600px;
+  left: 300px;
+  width: 400px;
+  height: 700px;
+  z-index: 5;
+  position: absolute;
+  background-image: url('../img/message/message2.png');
+  background-size: 400px auto;
+  background-position: 1000px 1000px;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+aside#message3 {
+  top: 2450px;
+  left: 300px;
+  width: 400px;
+  height: 700px;
+  z-index: 5;
+  position: absolute;
+  background-image: url('../img/message/message3.png');
+  background-size: 400px auto;
+  background-position: 1000px 1000px;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+aside#message4 {
+  top: 3300px;
+  left: 300px;
+  width: 400px;
+  height: 700px;
+  z-index: 5;
+  position: absolute;
+  background-image: url('../img/message/message4.png');
+  background-size: 400px auto;
+  background-position: 1000px 1000px;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
 }
 
 h1 {
-    font-size: 50px;
-    margin: 10px;
-    padding: 20px;
+  color: #243E73;
+  font-family: 'Cinzel', serif;
 }
 
-.box {
-    font-family: 'Karma', serif;
-    font-weight: bold;
-    font-size: 14pt;
-    background-color: #f7dd83;
-    min-height: 50px;
-    border-style: outset;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.507);
-    padding: 5px 200px;
-    margin: 10px;
+h3 {
+  position: relative;
+  color: #243E73;
+  font-size: 1.5rem;
+  left: 540px;
+  font-family: 'Cinzel', serif;
+}
+
+.rail {
+  position: absolute;
+  background-color: gray;
+  padding: 20px;
+  margin: auto;
+  width: 700px;
+  height: 5000px;
+  margin: 0 auto;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* BACKDROPS */
+
+.backdrop1 {
+  position: absolute;
+  background-color: white;
+  width: 1100px;
+  height: 700px;
+  left: 500px;
+  top: 750px;
+  z-index: 1;
+}
+
+.backdrop2 {
+  background-color: white;
+  position: absolute;
+  left: 500px;
+  top: 1600px;
+  width: 1100px;
+  height: 700px;
+  z-index: 1;
+}
+
+.backdrop3 {
+  position: absolute;
+  background-color: white;
+  width: 1100px;
+  height: 700px;
+  left: 500px;
+  top: 2450px;
+  z-index: 1;
+}
+
+.backdrop4 {
+  position: absolute;
+  background-color: white;
+  width: 1100px;
+  height: 700px;
+  left: 500px;
+  top: 3300px;
+  z-index: 1;
 }
 
 section {
-    margin-bottom: 25px;
-    height: 800px;
-    /* width: 1200px; */
-    padding: 0px 50px;
-    font-size: 40px;
-    text-align: center;
+  background-color: #F2F2F2;
+  padding: 0px 50px;
+  width: 1000px;
+  height: 600px;
+  z-index: 3;
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.35);
 }
 
+/* this is the main window */
+
+section.intro {
+  position: absolute;
+  background-color: #F2F2F2;
+  margin: 50px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 600px;
+  z-index: 6;
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* MESSAGES */
+
+.message1 {
+  position: absolute;
+  background-color: #6085CC;
+  margin-top: 250px;
+  width: 400px;
+  height: 600px;
+  text-align: left;
+  margin-left: -5%;
+  border-radius: 5px;
+  z-index: 4;
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.35);
+}
+
+.message2 {
+  position: absolute;
+  background-color: #6085CC;
+  margin-top: 250px;
+  width: 400px;
+  height: 600px;
+  text-align: left;
+  margin-left: -5%;
+  border-radius: 5px;
+  z-index: 4;
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.35);
+}
+
+.message3 {
+  position: absolute;
+  background-color: #6085CC;
+  margin-top: 250px;
+  width: 400px;
+  height: 600px;
+  text-align: left;
+  margin-left: -5%;
+  border-radius: 5px;
+  z-index: 4;
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.35);
+}
+
+.message4 {
+  position: absolute;
+  background-color: #6085CC;
+  margin-top: 250px;
+  width: 400px;
+  height: 600px;
+  text-align: left;
+  margin-left: -5%;
+  border-radius: 5px;
+  z-index: 4;
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.35);
+}
+
+#emphasis {
+  font-size: 20pt;
+  text-align: center !important;
+}
+
+header {
+  background-image: url('../img/background/title.jpg');
+  background-size: 800px;
+  background-position: center center;
+  width: 1300px;
+  height: 400px;
+  text-align: center;
+}
 
 /* SECTION 1 */
 
 #sect1 {
-    background-image: url('../img/message/message1.png'), url('../img/background/marble1.png');
-    background-size: 600px auto, 1300px auto;
-    background-position: 750px -75px, center center;
-    background-attachment: scroll, fixed;
-    /* turning 'fixed' on gives you a dope 'wipe' effect */
-    background-repeat: no-repeat;
+  position: absolute;
+  /* background-image: url('../img/message/message1.png'), url('../img/background/marble1.png'); */
+  background-size: 600px auto, 1300px auto;
+  background-position: 750px -75px, center center;
+  background-attachment: scroll, fixed;
+  /* turning 'fixed' on gives you a dope 'wipe' effect */
+  background-repeat: no-repeat;
+  top: 800px;
 }
 
 #sect1 .board {
-    position: relative;
-    left: -250px;
-    top: 200px;
-    opacity: 1;
-    z-index: 0;
-    transition: all 4s;
-    /*this is the animation step*/
+  position: relative;
+  left: 335px;
+  top: 180px;
+  opacity: 1;
+  z-index: 0;
+  transition: all 4s;
+  /*this is the animation step*/
 }
 
 #sect1 .board.offstage {
-    left: -250px;
-    top: 200px;
-    opacity: 0;
+  left: 335px;
+  top: 180px;
+  opacity: 0;
 }
 
-.b-group {
-    position: relative;
-    left: 82px;
-    top: -250px;
-    opacity: 1;
-    transition: all 2s;
-    z-index: 2;
-    /*this is the animation step*/
+#sect1 h1 {
+  position: relative;
+  font-size: 3rem;
+  margin: 10px;
+  left: 500px;
 }
 
-.b-group.offstage {
-    left: 82px;
-    top: -600px;
-    opacity: 0;
-    z-index: 2;
+.b-all {
+  position: relative;
+  left: -65px;
+  top: -163px;
+  opacity: 1;
+  transition: all 2s;
+  z-index: 2;
+  /*this is the animation step*/
 }
 
-.w-group {
-    position: relative;
-    left: -480px;
-    top: -40px;
-    opacity: 1;
-    transition: all 2s;
-    z-index: 2;
-    /*this is the animation step*/
+.b-all.offstage {
+  left: -65px;
+  top: -263px;
+  opacity: 0;
+  z-index: 2;
 }
 
-.w-group.offstage {
-    left: -480px;
-    top: -1270px;
-    opacity: 0;
-    z-index: 2;
+.w-all {
+  position: relative;
+  left: 405px;
+  top: 23px;
+  opacity: 1;
+  transition: all 2s;
+  z-index: 2;
+  /*this is the animation step*/
 }
 
+.w-all.offstage {
+  left: 405px;
+  top: -200px;
+  opacity: 0;
+  z-index: 2;
+}
 
 /* SECTION 2 */
 
 #sect2 {
-    background-image: url('../img/message/message2.png'), url('../img/background/marble2.png');
-    background-size: 600px auto, 1300px auto;
-    background-position: -50px 200px, center center;
-    background-attachment: scroll, fixed;
-    /* turning 'fixed' on gives you a dope 'wipe' effect */
-    background-repeat: no-repeat;
+  position: absolute;
+  /* here is where 'Pawn and King' will go */
+  background-size: 600px auto, 1300px auto;
+  background-position: -50px 200px, center center;
+  background-attachment: scroll, fixed;
+  /* turning 'fixed' on gives you a dope 'wipe' effect */
+  background-repeat: no-repeat;
+  top: 1650px;
 }
 
 #sect2 .board {
-    position: relative;
-    left: 310px;
-    top: 60px;
-    opacity: 1;
-    z-index: 0;
-    transition: all 4s;
-    /*this is the animation step*/
+  position: relative;
+  left: 335px;
+  top: 140px;
+  opacity: 1;
+  z-index: 0;
+  transition: all 4s;
+  /*this is the animation step*/
 }
 
 #sect2 .board.offstage {
-    left: 310px;
-    top: 60px;
-    opacity: 0;
+  left: 335px;
+  top: 140px;
+  opacity: 0;
+}
+
+#sect2 h1 {
+  position: relative;
+  font-size: 3rem;
+  margin: 10px;
+  left: 485px;
 }
 
 .w-pawn {
-    position: relative;
-    left: -87px;
-    top: -45px;
-    opacity: 1;
-    transition: all 2s;
-    z-index: 2;
-    /*this is the animation step*/
+  position: relative;
+  left: 56px;
+  top: 52px;
+  opacity: 1;
+  transition: all 2s;
+  z-index: 2;
+  /*this is the animation step*/
 }
 
 .w-pawn.offstage {
-    left: -87px;
-    top: -150px;
-    opacity: 0;
-    z-index: 2;
+  left: 400px;
+  top: 52px;
+  opacity: 0;
+  z-index: 2;
 }
 
 .w-king {
-    position: relative;
-    left: -225px;
-    top: -10px;
-    opacity: 1;
-    transition: all 2s;
-    z-index: 2;
-    /*this is the animation step*/
+  position: relative;
+  left: -138px;
+  top: 83px;
+  opacity: 1;
+  transition: all 2s;
+  z-index: 2;
+  /*this is the animation step*/
 }
 
 .w-king.offstage {
-    left: -225px;
-    top: -150px;
-    opacity: 0;
-    z-index: 2;
+  left: -400px;
+  top: 83px;
+  opacity: 0;
+  z-index: 2;
 }
-
 
 /* SECTION 3 */
 
 #sect3 {
-    background-image: url('../img/message/message3.png'), url('../img/background/marble3.png');
-    background-size: 600px auto, 1300px auto;
-    background-position: 750px 200px, center center;
-    background-attachment: scroll, fixed;
-    /* turning 'fixed' on gives you a dope 'wipe' effect */
-    background-repeat: no-repeat;
+  position: absolute;
+  /* here is where 'Bishop and Rook' will go */
+  background-size: 600px auto, 1300px auto;
+  background-position: -50px 200px, center center;
+  background-attachment: scroll, fixed;
+  /* turning 'fixed' on gives you a dope 'wipe' effect */
+  background-repeat: no-repeat;
+  margin-top: 2500px;
 }
 
 #sect3 .board {
-    position: relative;
-    left: -180px;
-    top: 200px;
-    opacity: 1;
-    z-index: 0;
-    transition: all 4s;
-    /*this is the animation step*/
+  position: relative;
+  left: 335px;
+  top: 180px;
+  opacity: 1;
+  z-index: 0;
+  transition: all 4s;
+  /*this is the animation step*/
 }
 
 #sect3 .board.offstage {
-    left: -180px;
-    top: 200px;
-    opacity: 0;
+  left: 335px;
+  top: 180px;
+  opacity: 0;
+}
+
+#sect3 h1 {
+  position: relative;
+  font-size: 3rem;
+  margin: 10px;
+  left: 430px;
 }
 
 .w-rook {
-    position: relative;
-    left: -400px;
-    top: 135px;
-    opacity: 1;
-    transition: all 2s;
-    z-index: 2;
-    /*this is the animation step*/
+  position: relative;
+  left: 210px;
+  top: 123px;
+  opacity: 1;
+  transition: all 2s;
+  z-index: 2;
+  /*this is the animation step*/
 }
 
 .w-rook.offstage {
-    left: -1000px;
-    top: -300px;
-    opacity: 0;
-    z-index: 2;
+  left: 400px;
+  top: 123px;
+  opacity: 0;
+  z-index: 2;
 }
 
 .w-bishop {
-    position: relative;
-    left: -745px;
-    top: 135px;
-    opacity: 1;
-    transition: all 2s;
-    z-index: 2;
-    /*this is the animation step*/
+  position: relative;
+  left: 9px;
+  top: 123px;
+  opacity: 1;
+  transition: all 2s;
+  z-index: 2;
+  /*this is the animation step*/
 }
 
 .w-bishop.offstage {
-    left: 200px;
-    top: -300px;
-    opacity: 0;
-    z-index: 2;
+  left: -1000px;
+  top: 123px;
+  opacity: 0;
+  z-index: 2;
 }
-
 
 /* SECTION 4 */
 
 #sect4 {
-    background-image: url('../img/message/message4.png'), url('../img/background/marble4.png');
-    background-size: 600px auto, 1600px auto;
-    background-position: -50px 200px, center center;
-    background-attachment: scroll, fixed;
-    /* turning 'fixed' on gives you a dope 'wipe' effect */
-    background-repeat: no-repeat;
+  position: absolute;
+  /* here is where 'Queen and Knight' will go */
+  background-size: 600px auto, 1300px auto;
+  background-position: -50px 200px, center center;
+  background-attachment: scroll, fixed;
+  /* turning 'fixed' on gives you a dope 'wipe' effect */
+  background-repeat: no-repeat;
+  margin-top: 3350px;
 }
 
 #sect4 .board {
-    position: relative;
-    left: 310px;
-    top: 200px;
-    opacity: 1;
-    z-index: 0;
-    transition: all 4s;
-    /*this is the animation step*/
+  position: relative;
+  left: 335px;
+  top: 180px;
+  opacity: 1;
+  z-index: 0;
+  transition: all 4s;
+  /*this is the animation step*/
 }
 
 #sect4 .board.offstage {
-    left: 310px;
-    top: 200px;
-    opacity: 0;
+  left: 335px;
+  top: 180px;
+  opacity: 0;
+}
+
+#sect4 h1 {
+  position: relative;
+  font-size: 3rem;
+  margin: 10px;
+  left: 560px;
 }
 
 .w-knight {
-    position: relative;
-    left: -337px;
-    top: 130px;
-    opacity: 1;
-    transition: all 2s;
-    z-index: 2;
-    /*this is the animation step*/
+  position: relative;
+  left: -230px;
+  top: 123px;
+  opacity: 1;
+  transition: all 2s;
+  z-index: 2;
+  /*this is the animation step*/
 }
 
 .w-knight.offstage {
-    left: -1075px;
-    top: 130px;
-    opacity: 0;
-    z-index: 2;
+  left: -1000px;
+  top: 123px;
+  opacity: 0;
+  z-index: 2;
 }
 
 .w-queen {
-    position: relative;
-    left: -158px;
-    top: 130px;
-    opacity: 1;
-    transition: all 2s;
-    z-index: 2;
-    /*this is the animation step*/
+  position: relative;
+  left: -73px;
+  top: 123px;
+  opacity: 1;
+  transition: all 2s;
+  z-index: 2;
+  /*this is the animation step*/
 }
 
 .w-queen.offstage {
-    left: -1146px;
-    top: 130px;
-    opacity: 0;
-    z-index: 2;
+  left: 400px;
+  top: 123px;
+  opacity: 0;
+  z-index: 2;
 }
