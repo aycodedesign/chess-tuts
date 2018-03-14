@@ -13,7 +13,7 @@ rail: gradient 45 degrees black white
 
 .container {
   width: 1000px;
-  height: 5000px;
+  height: 4500px;
   margin: 0 auto;
 }
 
@@ -21,15 +21,17 @@ body {
   background-color: #A8ADC1;
   margin: 0 auto;
   font-size: 1rem;
+  width: 1000px;
 }
 
 aside#message1 {
-  top: 750px;
-  left: 300px;
-  width: 400px;
-  height: 700px;
-  z-index: 5;
   position: absolute;
+  top: 700px;
+  left: 50%;
+  transform: translateX(-150%);
+  width: 400px;
+  height: 800px;
+  z-index: 5;
   background-image: url('../img/message/message1.png');
   background-size: 400px auto;
   background-position: 1000px 1000px;
@@ -38,12 +40,13 @@ aside#message1 {
 }
 
 aside#message2 {
-  top: 1600px;
-  left: 300px;
-  width: 400px;
-  height: 700px;
-  z-index: 5;
   position: absolute;
+  top: 1550px;
+  left: 50%;
+  transform: translateX(-150%);
+  width: 400px;
+  height: 800px;
+  z-index: 5;
   background-image: url('../img/message/message2.png');
   background-size: 400px auto;
   background-position: 1000px 1000px;
@@ -52,12 +55,13 @@ aside#message2 {
 }
 
 aside#message3 {
-  top: 2450px;
-  left: 300px;
-  width: 400px;
-  height: 700px;
-  z-index: 5;
   position: absolute;
+  top: 2400px;
+  left: 50%;
+  transform: translateX(-150%);
+  width: 400px;
+  height: 800px;
+  z-index: 5;
   background-image: url('../img/message/message3.png');
   background-size: 400px auto;
   background-position: 1000px 1000px;
@@ -66,12 +70,13 @@ aside#message3 {
 }
 
 aside#message4 {
-  top: 3300px;
-  left: 300px;
-  width: 400px;
-  height: 700px;
-  z-index: 5;
   position: absolute;
+  top: 3250px;
+  left: 50%;
+  transform: translateX(-150%);
+  width: 400px;
+  height: 800px;
+  z-index: 5;
   background-image: url('../img/message/message4.png');
   background-size: 400px auto;
   background-position: 1000px 1000px;
@@ -96,14 +101,25 @@ h3 {
   position: absolute;
   background-color: gray;
   padding: 20px;
-  margin: auto;
   width: 700px;
-  height: 5000px;
+  height: 4500px;
   margin: 0 auto;
   z-index: 2;
   left: 50%;
   transform: translateX(-50%);
+
+  background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 21%, rgba(124,124,124,1) 58%, rgba(0,0,0,1) 85%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 21%,rgba(124,124,124,1) 58%,rgba(0,0,0,1) 85%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(255,255,255,1) 21%,rgba(124,124,124,1) 58%,rgba(0,0,0,1) 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+/* NAVBAR */
+.pinned {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 
 /* BACKDROPS */
 
@@ -112,18 +128,21 @@ h3 {
   background-color: white;
   width: 1100px;
   height: 700px;
-  left: 500px;
+  left: 50%;
+  transform: translateX(-40%);
   top: 750px;
   z-index: 1;
 }
 
 .backdrop2 {
-  background-color: white;
   position: absolute;
-  left: 500px;
-  top: 1600px;
+  background-color: white;
   width: 1100px;
   height: 700px;
+  left: 50%;
+  transform: translateX(-40%);
+  top: 1600px;
+
   z-index: 1;
 }
 
@@ -132,7 +151,9 @@ h3 {
   background-color: white;
   width: 1100px;
   height: 700px;
-  left: 500px;
+  left: 50%;
+  transform: translateX(-40%);
+
   top: 2450px;
   z-index: 1;
 }
@@ -142,14 +163,15 @@ h3 {
   background-color: white;
   width: 1100px;
   height: 700px;
-  left: 500px;
+  left: 50%;
+  transform: translateX(-40%);
+
   top: 3300px;
   z-index: 1;
 }
 
 section {
   background-color: #F2F2F2;
-  padding: 0px 50px;
   width: 1000px;
   height: 600px;
   z-index: 3;
@@ -166,7 +188,7 @@ section.intro {
   transform: translateX(-50%);
   width: 1000px;
   height: 600px;
-  z-index: 6;
+  /*z-index: 6;*/
   box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.35);
 }
 
@@ -271,7 +293,7 @@ header {
   position: relative;
   font-size: 3rem;
   margin: 10px;
-  left: 500px;
+  left: 480px;
 }
 
 .b-all {
@@ -324,7 +346,7 @@ header {
 #sect2 .board {
   position: relative;
   left: 335px;
-  top: 140px;
+  top: 110px;
   opacity: 1;
   z-index: 0;
   transition: all 4s;
@@ -333,7 +355,7 @@ header {
 
 #sect2 .board.offstage {
   left: 335px;
-  top: 140px;
+  top: 110px;
   opacity: 0;
 }
 
@@ -347,7 +369,7 @@ header {
 .w-pawn {
   position: relative;
   left: 56px;
-  top: 52px;
+  top: 25px;
   opacity: 1;
   transition: all 2s;
   z-index: 2;
@@ -356,7 +378,7 @@ header {
 
 .w-pawn.offstage {
   left: 400px;
-  top: 52px;
+  top: 25px;
   opacity: 0;
   z-index: 2;
 }
@@ -364,7 +386,7 @@ header {
 .w-king {
   position: relative;
   left: -138px;
-  top: 83px;
+  top: 55px;
   opacity: 1;
   transition: all 2s;
   z-index: 2;
@@ -373,7 +395,7 @@ header {
 
 .w-king.offstage {
   left: -400px;
-  top: 83px;
+  top: 55px;
   opacity: 0;
   z-index: 2;
 }
