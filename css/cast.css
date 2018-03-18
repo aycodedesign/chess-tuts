@@ -1,0 +1,268 @@
+section.stage {
+  position: absolute;
+  background-color: #F2F2F2;
+  margin: 50px 0;
+  top: 750px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 600px;
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  background-image: url('../img/chessboard.png');
+}
+
+/* ARROWS */
+
+.arrow {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 270px;
+  z-index: 1;
+  background-position: 0px 0px;
+  /* transition: all .1s; */
+}
+
+.arrow:hover {
+  background-position: 0px -64px;
+}
+
+.arrow.left {
+  background-image: url('../img/arrow-left.png');
+  left: 20px;
+}
+
+.arrow.right {
+  background-image: url('../img/arrow-right.png');
+  right: 20px;
+}
+
+/* CHARACTER SCREEN */
+
+.start {
+  background-image: url('../img/curtains.png');
+  width: 1000px;
+  height: 600px;
+  background-position: top left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1
+}
+
+/* PAWN */
+
+.pawn1 {
+  background-image: url('../img/cast-pieces/b-pawn.png');
+  background-position: top left;
+  width: 97px;
+  height: 150px;
+  position: absolute;
+  top: 320px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.pawn2 {
+  background-image: url('../img/cast-pieces/w-pawn.png');
+  background-position: top left;
+  width: 97px;
+  height: 150px;
+  position: absolute;
+  top: 320px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.pawnsign {
+  background-image: url('../img/signs/plaque-pawn.png');
+  background-position: top left;
+  width: 300px;
+  height: 333px;
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+
+/* BISHOP */
+
+.bishop1 {
+  background-image: url('../img/cast-pieces/b-bishop.png');
+  background-position: top left;
+  width: 97px;
+  height: 167px;
+  position: absolute;
+  top: 304px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.bishop2 {
+  background-image: url('../img/cast-pieces/w-bishop.png');
+  background-position: top left;
+  width: 97px;
+  height: 167px;
+  position: absolute;
+  top: 304px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.bishopsign {
+  background-image: url('../img/signs/plaque-bishop.png');
+  background-position: top left;
+  width: 300px;
+  height: 333px;
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+
+/* KNIGHT */
+
+.knight1 {
+  background-image: url('../img/cast-pieces/b-knight.png');
+  background-position: top left;
+  width: 97px;
+  height: 150px;
+  position: absolute;
+  top: 319px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.knight2 {
+  background-image: url('../img/cast-pieces/w-knight.png');
+  background-position: top left;
+  width: 97px;
+  height: 150px;
+  position: absolute;
+  top: 319px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.knightsign {
+  background-image: url('../img/signs/plaque-knight.png');
+  background-position: top left;
+  width: 300px;
+  height: 333px;
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+
+/* ROOK */
+
+.rook1 {
+  background-image: url('../img/cast-pieces/b-rook.png');
+  background-position: top left;
+  width: 97px;
+  height: 165px;
+  position: absolute;
+  top: 304px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.rook2 {
+  background-image: url('../img/cast-pieces/w-rook.png');
+  background-position: top left;
+  width: 97px;
+  height: 165px;
+  position: absolute;
+  top: 304px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.rooksign {
+  background-image: url('../img/signs/plaque-rook.png');
+  background-position: top left;
+  width: 300px;
+  height: 333px;
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+
+/* QUEEN */
+
+.queen1 {
+  background-image: url('../img/cast-pieces/b-queen.png');
+  background-position: top left;
+  width: 97px;
+  height: 154px;
+  position: absolute;
+  top: 315px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.queen2 {
+  background-image: url('../img/cast-pieces/w-queen.png');
+  background-position: top left;
+  width: 97px;
+  height: 154px;
+  position: absolute;
+  top: 315px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.queensign {
+  background-image: url('../img/signs/plaque-queen.png');
+  background-position: top left;
+  width: 300px;
+  height: 333px;
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+
+/* KING */
+
+.king1 {
+  background-image: url('../img/cast-pieces/b-king.png');
+  background-position: top left;
+  width: 97px;
+  height: 178px;
+  position: absolute;
+  top: 294px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.king2 {
+  background-image: url('../img/cast-pieces/w-king.png');
+  background-position: top left;
+  width: 97px;
+  height: 178px;
+  position: absolute;
+  top: 290px;
+  left: -100px;
+  background-repeat: no-repeat;
+}
+
+.kingsign {
+  background-image: url('../img/signs/plaque-king.png');
+  background-position: top left;
+  width: 300px;
+  height: 333px;
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}

@@ -13,9 +13,9 @@
         //2. figure out which section to animate to
 
         // this variable adjusts distance from the section where scroll stops
-        const offset = 200;
+        var offset = 200;
 
-        const whichSection = $(this).attr('href');
+        var whichSection = $(this).attr('href');
 
         //3. animate to section
 
@@ -26,11 +26,11 @@
 
     //determines how far down the page navbar sticks
     $(window).scroll(function () {
-        const howFar = $(window).scrollTop();
+        var howFar = $(window).scrollTop();
         console.log(howFar);
 
         if (howFar >= 595) {
-            $('nav').addClass('pinned navbar-dark'),
+            $('nav').addClass('pinned navbar-dark');
 			$('nav').removeClass('bg-light');
         } else {
             {
@@ -112,20 +112,20 @@ $(window).scroll(sect4_onStage);
 
 function parallax_move(theMessage, posLeft, scrollSpeed) {
 
-	const sectHowFar = theMessage.offset().top;
+	var sectHowFar = theMessage.offset().top;
 	// shows how far user has scrolled, per scroll
-	const scrollFromTop = $(window).scrollTop() + 300;
+	var scrollFromTop = $(window).scrollTop() + 300;
 
-	const posTop = (scrollFromTop - sectHowFar) * scrollSpeed;
+	var posTop = (scrollFromTop - sectHowFar) * scrollSpeed;
 
 	// theMessage.css('background-position', '-100px 600px, center center')
 	theMessage.css('background-position', posLeft + ' ' + posTop + 'px, center center');
 }
 
 $(window).scroll(function () {
-	parallax_move($('#message1'), '0', 0.7);
-	parallax_move($('#message2'), '0', 0.7);
+	parallax_move($('#message1'), '0', 0.5);
+	parallax_move($('#message2'), '0', 0.2);
 	parallax_move($('#message3'), '0', 0.7);
-	parallax_move($('#message4'), '0', 0.7);
+	parallax_move($('#message4'), '0', 0.5);
 });
 //end READY FUNCTION
