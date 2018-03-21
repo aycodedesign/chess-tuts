@@ -62,6 +62,7 @@ function sect1_onStage() {
 function sect2_onStage() {
 	if ($('#sect2 .inview-block').is(':in-viewport')) {
 		$('#sect2 img.board').removeClass('offstage');
+		// $('#sect2 img.arrow').removeClass('offstage');
 		$('#sect2 img.w-king').removeClass('offstage');
 		$('#sect2 img.w-pawn').removeClass('offstage');
 
